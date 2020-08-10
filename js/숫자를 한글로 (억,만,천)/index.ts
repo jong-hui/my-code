@@ -22,7 +22,7 @@ export const numberToKorean = (price: number) => {
     resultString += `${resultString != "" ? " " : ""}${cheon.toLocaleString()}천`
   }
 
-  if (namuji > 0) {
+  if (namuji > 0 || price === 0) {
     resultString += `${resultString != "" ? " " : ""}${namuji.toLocaleString()}`
   }
 
