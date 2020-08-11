@@ -25,5 +25,5 @@ export const useWhen = (conditioner: () => boolean, callback: () => void, deps?:
     return () => {
       active = false
     }
-  }, [deps])
+  }, deps)
 }
